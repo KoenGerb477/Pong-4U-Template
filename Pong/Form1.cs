@@ -379,14 +379,10 @@ namespace Pong
                 powerUpTiming.Start();
                 powerUpA = true;
 
-                if (aKeyDown)
-                {
-                    powerUpA1Label.Visible = false;
-                }
-                else if (leftKeyDown)
-                {
-                    powerUpA2Label.Visible = false;
-                }
+                powerUpA1Label.Visible = false;
+                powerUpA2Label.Visible = false;
+                powerUpB1Label.Visible = false;
+                powerUpB2Label.Visible = false;
             }
             if ((dKeyDown || rightKeyDown) && powerUpTiming.ElapsedMilliseconds > 5000 || powerUpTiming.ElapsedMilliseconds == 0)
             {
@@ -394,14 +390,10 @@ namespace Pong
                 powerUpTiming.Start();
                 powerUpB = true;
 
-                if (dKeyDown)
-                {
-                    powerUpB1Label.Visible = false;
-                }
-                else if (rightKeyDown)
-                {
-                    powerUpB2Label.Visible = false;
-                }
+                powerUpA1Label.Visible = false;
+                powerUpA2Label.Visible = false;
+                powerUpB1Label.Visible = false;
+                powerUpB2Label.Visible = false;
             }
 
             if (powerUpA && powerUpTiming.ElapsedMilliseconds < 2000)
